@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kfc2"
+    tools:context=".Main4Activity">
+
+    <TextView
+        android:id="@+id/yn"
+        android:layout_width="194dp"
+        android:layout_height="82dp"
+        android:background="#FFFFFF"
+        android:fontFamily="serif"
+        android:textColor="#D32F2F"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/yage"
+        android:layout_width="194dp"
+        android:layout_height="82dp"
+        android:background="#FFFFFF"
+        android:fontFamily="serif"
+        android:textColor="#D32F2F"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/yn"
+        android:layout_marginTop="120dp"/>
+
+    <TextView
+        android:id="@+id/yemail"
+        android:layout_width="194dp"
+        android:layout_height="82dp"
+        android:background="#FFFFFF"
+        android:fontFamily="serif"
+        android:textColor="#D32F2F"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/yage"
+        android:layout_marginTop="120dp"/>
+
+    <TextView
+        android:id="@+id/ynum"
+        android:layout_width="194dp"
+        android:layout_height="82dp"
+        android:background="#FFFFFF"
+        android:fontFamily="serif"
+        android:textColor="#D32F2F"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/yemail"
+        android:layout_marginTop="120dp"/>
+
+    <TextView
+        android:id="@+id/ch1"
+        android:layout_width="85dp"
+        android:layout_height="32dp"
+        android:background="#FFFFFF"
+        android:layout_alignTop="@+id/ynum"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="110dp"/>
+
+    <TextView
+        android:id="@+id/ch2"
+        android:layout_width="85dp"
+        android:layout_height="32dp"
+        android:background="#FFFFFF"
+        android:layout_alignTop="@+id/ynum"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="221dp"/>
+
+    <TextView
+        android:id="@+id/thank"
+        android:layout_width="251dp"
+        android:layout_height="71dp"
+        android:layout_alignTop="@id/ynum"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:fontFamily="serif"
+        android:text="    Thank You"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp" />
+</RelativeLayout>
