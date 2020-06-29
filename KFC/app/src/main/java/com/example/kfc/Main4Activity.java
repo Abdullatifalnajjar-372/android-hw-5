@@ -2,7 +2,11 @@ package com.example.kfc;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class Main4Activity extends AppCompatActivity {
@@ -16,20 +20,36 @@ public class Main4Activity extends AppCompatActivity {
         m.setText(v.getString("nm"));
         TextView t = findViewById(R.id.yage);
         Bundle r = getIntent().getExtras();
-        t.setText(r.getInt("ag"));
-        TextView u = findViewById(R.id.yemail);
+        t.setText(r.getString("ag"));
+        final TextView u = findViewById(R.id.yemail);
         Bundle ou = getIntent().getExtras();
         u.setText(ou.getString("em"));
         TextView phone = findViewById(R.id.ynum);
         Bundle su = getIntent().getExtras();
-        phone.setText(su.getInt("ph"));
+        phone.setText(su.getString("ph"));
         TextView chf = findViewById(R.id.ch1);
         Bundle ch = getIntent().getExtras();
         chf.setText(ch.getString("ch"));
-        TextView chf = findViewById(R.id.ch2);
+        TextView chv = findViewById(R.id.ch2);
         Bundle cr = getIntent().getExtras();
-        chf.setText(ch.getString("ch"));
+        chv.setText(cr.getString("ca"));
+
+
+        final TextView ab = findViewById(R.id.emal);
+
+
+        Button sendus = findViewById(R.id.sendus);
+        sendus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent send = new Intent(Intent.ACTION_VIEW
+                        , Uri.parse("mailto:" + ab.getText().toString()));
+                startActivity(send);
+            }
+        });
 
 
     }
+
+
 }

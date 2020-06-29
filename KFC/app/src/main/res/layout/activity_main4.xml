@@ -11,48 +11,52 @@
         android:id="@+id/yn"
         android:layout_width="194dp"
         android:layout_height="82dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
         android:background="#FFFFFF"
         android:fontFamily="serif"
+        android:text="  "
         android:textColor="#D32F2F"
-        android:textSize="30sp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"/>
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/yage"
         android:layout_width="194dp"
         android:layout_height="82dp"
+        android:layout_alignTop="@+id/yn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
         android:background="#FFFFFF"
         android:fontFamily="serif"
+        android:text="   "
         android:textColor="#D32F2F"
-        android:textSize="30sp"
-        android:layout_centerHorizontal="true"
-        android:layout_alignTop="@+id/yn"
-        android:layout_marginTop="120dp"/>
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/yemail"
         android:layout_width="194dp"
         android:layout_height="82dp"
+        android:layout_alignTop="@+id/yage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
         android:background="#FFFFFF"
         android:fontFamily="serif"
+        android:text="  "
         android:textColor="#D32F2F"
-        android:textSize="30sp"
-        android:layout_centerHorizontal="true"
-        android:layout_alignTop="@+id/yage"
-        android:layout_marginTop="120dp"/>
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/ynum"
         android:layout_width="194dp"
         android:layout_height="82dp"
+        android:layout_alignTop="@+id/yemail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
         android:background="#FFFFFF"
         android:fontFamily="serif"
+        android:text="    "
         android:textColor="#D32F2F"
-        android:textSize="30sp"
-        android:layout_centerHorizontal="true"
-        android:layout_alignTop="@+id/yemail"
-        android:layout_marginTop="120dp"/>
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/ch1"
@@ -77,10 +81,29 @@
         android:layout_width="251dp"
         android:layout_height="71dp"
         android:layout_alignTop="@id/ynum"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="157dp"
         android:fontFamily="serif"
         android:text="    Thank You"
         android:textColor="#FFFFFF"
-        android:textSize="36sp" />
+        android:textSize="36sp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/sendus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thank"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#000000"
+        android:text="Email Us"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/emal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="androidarethebest@gmail.com"
+        android:textColor="#00FFFFFF" />
 </RelativeLayout>

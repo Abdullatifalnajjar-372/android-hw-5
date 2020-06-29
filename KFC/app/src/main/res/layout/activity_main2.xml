@@ -2,40 +2,43 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/kfc2"
+    android:background="@drawable/kfc5"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Main2Activity">
 
     <TextView
         android:id="@+id/apl"
-        android:layout_width="354dp"
-        android:layout_height="wrap_content"
+        android:layout_width="303dp"
+        android:layout_height="126dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#00A62E2E"
         android:fontFamily="serif"
         android:text="Applying For The JOB"
         android:textColor="#FFFFFF"
-        android:textSize="60sp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:layout_margin="10dp"/>
+        android:textSize="40sp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="367dp"
         android:layout_height="228dp"
         android:layout_alignTop="@+id/apl"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="158dp"
+        android:layout_marginTop="131dp"
         android:text="Thank you for choosing KFC retuarants. We appreciate your interest about working with us. Please  press NEXT to read the requirements,"
         android:textColor="#070000"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"/>
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="254dp"
         android:layout_alignTop="@+id/textView2"
-        android:layout_marginTop="229dp"
+        android:layout_marginTop="244dp"
         android:background="#00FFFFFF"
         android:text="شكرا لاختيارك شركة مطاعم كنتاكي . نحن نقدر اهتمامك للعمل معنا. الرجاء الضغط على زر NEXT لقراءة متطلبات الوظيفة ."
         android:textColor="#000000"
@@ -46,7 +49,7 @@
         android:layout_width="155dp"
         android:layout_height="77dp"
         android:layout_alignTop="@+id/textView3"
-        android:layout_marginTop="202dp"
+        android:layout_marginTop="260dp"
         android:background="#FFFFFF"
         android:text="NEXT"
         android:textColor="#D32F2F"

@@ -3,6 +3,7 @@ package com.example.kfc;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.view.View;
@@ -39,7 +40,10 @@ public class Main3Activity extends AppCompatActivity {
                 s.putExtra("ca",ca.getText().toString());
                 s.putExtra("ag",ag.getText().toString());
                 startActivity(s);
+
             }
+
+
         });
     }
 }
