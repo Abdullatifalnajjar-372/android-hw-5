@@ -24,7 +24,7 @@ public class Main4Activity extends AppCompatActivity {
         final TextView u = findViewById(R.id.yemail);
         Bundle ou = getIntent().getExtras();
         u.setText(ou.getString("em"));
-        TextView phone = findViewById(R.id.ynum);
+        final TextView phone = findViewById(R.id.ynum);
         Bundle su = getIntent().getExtras();
         phone.setText(su.getString("ph"));
         TextView chf = findViewById(R.id.ch1);
@@ -45,6 +45,31 @@ public class Main4Activity extends AppCompatActivity {
                 Intent send = new Intent(Intent.ACTION_VIEW
                         , Uri.parse("mailto:" + ab.getText().toString()));
                 startActivity(send);
+            }
+
+
+        });
+        u.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String yemail = u.getText().toString();
+                Intent in = new Intent(Intent.ACTION_SEND);
+                in.setType("message/gg6678");
+                in.putExtra(Intent.EXTRA_EMAIL,new String[]{yemail});
+                in.setPackage("com.google.android.gm");
+                startActivity(in);
+
+
+            }
+        });
+
+        phone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String phone78 = phone.getText().toString();
+                Intent pho = new Intent(Intent.ACTION_DIAL);
+                pho.setData(Uri.parse("tel:"+phone));
+                startActivity(pho);
             }
         });
 
